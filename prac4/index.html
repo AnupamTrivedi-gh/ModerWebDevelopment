@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVault - Exclusive Collection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans min-h-screen flex flex-col">
+
+    <!-- 1. NAVIGATION BAR -->
+    <nav class="bg-slate-800/80 backdrop-blur-md border-b border-slate-700 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-indigo-500 rounded-lg flex items-center justify-center font-bold text-white">T</div>
+                <span class="text-xl font-bold tracking-wide">TechVault</span>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm text-slate-300 font-medium">
+                <a href="#" class="hover:text-indigo-400 transition-colors">Store</a>
+                <a href="#" class="hover:text-indigo-400 transition-colors">New Arrivals</a>
+                <a href="#" class="hover:text-indigo-400 transition-colors">Categories</a>
+            </div>
+            <button class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg text-sm font-semibold active:scale-95 transition-all shadow-lg shadow-indigo-600/30">
+                Cart (3)
+            </button>
+        </div>
+    </nav>
+
+    <!-- 2. HERO BANNER -->
+    <section class="max-w-7xl mx-auto px-6 pt-12 pb-8 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-8">
+        <div class="max-w-2xl">
+            <span class="text-indigo-400 font-semibold text-sm uppercase tracking-wider bg-indigo-500/10 px-3 py-1 rounded-full border border-indigo-500/20">
+                2026 Hardware Drop
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold mt-4 mb-4 tracking-tight leading-tight">
+                Upgrade Your <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">Workspace</span>
+            </h1>
+            <p class="text-slate-400 text-lg">
+                Explore our minimalist collection designed for maximum efficiency, seamless mobility, and clean desktop setups.
+            </p>
+        </div>
+        <!-- Quick Stats Badge -->
+        <div class="flex gap-6 bg-slate-800/50 border border-slate-700/50 p-4 rounded-2xl">
+            <div class="text-center px-2">
+                <p class="text-2xl font-bold text-indigo-400">4.9★</p>
+                <p class="text-xs text-slate-400">Rating</p>
+            </div>
+            <div class="border-r border-slate-700"></div>
+            <div class="text-center px-2">
+                <p class="text-2xl font-bold text-cyan-400">Free</p>
+                <p class="text-xs text-slate-400">Shipping</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. PRODUCT SHOWCASE GRID -->
+    <main class="max-w-7xl mx-auto px-6 py-8 flex-grow">
+        <div class="flex flex-col md:flex-row flex-wrap justify-center gap-8">
+
+            <!-- PRODUCT CARD 1 -->
+            <div class="bg-slate-800/60 border border-slate-700/60 rounded-2xl overflow-hidden flex flex-col w-full md:w-[45%] lg:w-[30%] hover:border-indigo-500/50 transition-all duration-300 group">
+                <!-- Image Header with Floating Badge -->
+                <div class="h-52 bg-slate-700/40 relative flex items-center justify-center overflow-hidden">
+                    <span class="text-slate-400 group-hover:scale-110 transition-transform duration-300 font-medium">📷 Smart Watch Render</span>
+                    <span class="absolute top-3 right-3 bg-indigo-500 text-xs font-bold px-2.5 py-1 rounded-md">New</span>
+                </div>
+                <!-- Card Body -->
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h2 class="text-lg font-bold group-hover:text-indigo-400 transition-colors">Smart Fitness Watch</h2>
+                        <span class="text-amber-400 text-sm font-semibold">★ 4.9</span>
+                    </div>
+                    <p class="text-slate-400 text-sm mb-6 flex-grow">Track activity, notifications, and vital stats with a minimalist curved display.</p>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-slate-700/50">
+                        <div>
+                            <span class="text-xs text-slate-500 block">Price</span>
+                            <span class="text-xl font-bold text-slate-100">$199</span>
+                        </div>
+                        <button class="bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium px-4 py-2.5 rounded-xl active:scale-95 transition-all shadow-md shadow-indigo-600/20">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT CARD 2 -->
+            <div class="bg-slate-800/60 border border-slate-700/60 rounded-2xl overflow-hidden flex flex-col w-full md:w-[45%] lg:w-[30%] hover:border-indigo-500/50 transition-all duration-300 group">
+                <div class="h-52 bg-slate-700/40 relative flex items-center justify-center overflow-hidden">
+                    <span class="text-slate-400 group-hover:scale-110 transition-transform duration-300 font-medium">🎧 Earbuds Render</span>
+                    <span class="absolute top-3 right-3 bg-cyan-500 text-xs font-bold px-2.5 py-1 rounded-md">Bestseller</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h2 class="text-lg font-bold group-hover:text-indigo-400 transition-colors">Wireless Earbuds Pro</h2>
+                        <span class="text-amber-400 text-sm font-semibold">★ 4.8</span>
+                    </div>
+                    <p class="text-slate-400 text-sm mb-6 flex-grow">Active noise cancellation paired with high-fidelity studio acoustic tuning.</p>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-slate-700/50">
+                        <div>
+                            <span class="text-xs text-slate-500 block">Price</span>
+                            <span class="text-xl font-bold text-slate-100">$129</span>
+                        </div>
+                        <button class="bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium px-4 py-2.5 rounded-xl active:scale-95 transition-all shadow-md shadow-indigo-600/20">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT CARD 3 -->
+            <div class="bg-slate-800/60 border border-slate-700/60 rounded-2xl overflow-hidden flex flex-col w-full md:w-[45%] lg:w-[30%] hover:border-indigo-500/50 transition-all duration-300 group">
+                <div class="h-52 bg-slate-700/40 relative flex items-center justify-center overflow-hidden">
+                    <span class="text-slate-400 group-hover:scale-110 transition-transform duration-300 font-medium">⌨️ Keyboard Render</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h2 class="text-lg font-bold group-hover:text-indigo-400 transition-colors">Mechanical Keyboard</h2>
+                        <span class="text-amber-400 text-sm font-semibold">★ 5.0</span>
+                    </div>
+                    <p class="text-slate-400 text-sm mb-6 flex-grow">Hot-swappable switches with customizable per-key RGB backlight accents.</p>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-slate-700/50">
+                        <div>
+                            <span class="text-xs text-slate-500 block">Price</span>
+                            <span class="text-xl font-bold text-slate-100">$89</span>
+                        </div>
+                        <button class="bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium px-4 py-2.5 rounded-xl active:scale-95 transition-all shadow-md shadow-indigo-600/20">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- 4. FOOTER -->
+    <footer class="bg-slate-950 border-t border-slate-800 mt-12 py-6 text-center text-xs text-slate-500">
+        <p>© 2026 TechVault Showcase. Designed using Tailwind CSS Flexbox & Responsive Breakpoints.</p>
+    </footer>
+
+</body>
+</html>
