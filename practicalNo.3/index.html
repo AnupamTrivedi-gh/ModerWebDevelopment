@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBJITMR Technical Festival</title>
+    
+    <!-- Integrating Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<!-- Body with a vibrant background image and Flexbox layout for centering -->
+<body class="bg-[url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center bg-fixed min-h-screen flex flex-col items-center justify-center p-4 sm:p-8">
+
+    <!-- Main Invitation Card:
+         Using 'backdrop-blur-md' and 'bg-white/90' to create a modern frosted glass effect over the background image.
+         'rounded-2xl', 'shadow-2xl', and 'max-w-2xl' control the shape and size. -->
+    <div class="backdrop-blur-md bg-white/90 p-8 sm:p-10 rounded-2xl shadow-2xl max-w-2xl w-full text-center border-t-8 border-green-600 mx-auto transition-all duration-300">
+
+        <!-- College Branding Section -->
+        <div class="flex flex-col items-center mb-6">
+            <!-- Placeholder for SB Jain Logo -->
+            <div class="w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center border-4 border-green-600 shadow-sm mb-4 overflow-hidden">
+                <img src="data:image/png;base64,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" alt="SB Jain Logo" class="w-full h-full object-cover opacity-50">
+            </div>
+            <h3 class="text-sm sm:text-base font-bold text-gray-700 tracking-wide uppercase">
+                S. B. Jain Institute of Technology, Management & Research, Nagpur
+            </h3>
+        </div>
+
+        <!-- Typography: Event Titles -->
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-2 drop-shadow-sm">Technotsav 2026</h1>
+        <h2 class="text-xl font-semibold text-green-600 mb-6">Annual Technical Festival</h2>
+
+        <p class="text-gray-700 mb-8 leading-relaxed px-4">
+            Join us for an electrifying day of innovation, coding hackathons, and cutting-edge technology showcases. Bring your brightest ideas!
+        </p>
+
+        <!-- New Feature: Event Schedule Grid -->
+        <div class="mb-8 text-left bg-gray-50/80 p-5 rounded-xl border border-gray-200 shadow-inner">
+            <h4 class="text-lg font-bold text-gray-800 mb-4 border-b pb-2">Event Schedule - Oct 15th</h4>
+            <ul class="space-y-3 text-sm sm:text-base text-gray-700">
+                <li class="flex justify-between">
+                    <span class="font-semibold text-green-700">09:00 AM</span>
+                    <span>Inauguration Ceremony</span>
+                </li>
+                <li class="flex justify-between">
+                    <span class="font-semibold text-green-700">10:30 AM</span>
+                    <span>Hackathon Kickoff</span>
+                </li>
+                <li class="flex justify-between">
+                    <span class="font-semibold text-green-700">01:00 PM</span>
+                    <span>Lunch Break</span>
+                </li>
+                <li class="flex justify-between">
+                    <span class="font-semibold text-green-700">04:30 PM</span>
+                    <span>Prize Distribution & Closing</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Interactive Button:
+             Using structural prefix states like 'hover:bg-green-700' and 'focus:ring-2' for accessibility. -->
+        <a href="#" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 shadow-lg transform hover:-translate-y-1">
+            RSVP / Register Now
+        </a>
+        
+    </div>
+
+    <!-- New Feature: Simple Footer -->
+    <footer class="mt-8 text-center text-white/90 text-sm drop-shadow-md">
+        <p>&copy; 2026 S. B. Jain Institute of Technology, Management & Research.</p>
+        <p>For queries, contact: studentcouncil@sbjit.edu.in</p>
+    </footer>
+
+</body>
+</html>
