@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College Help Portal — FAQ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">🎓 College Help Portal</div>
+      <nav>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="container">
+      <h1>How can we help you?</h1>
+      <p>Find quick answers to the most common student questions below.</p>
+      <input
+        type="text"
+        id="search-box"
+        placeholder="🔍  Search questions…"
+        autocomplete="off"
+      />
+    </div>
+  </section>
+
+  <!-- ===== FAQ Section ===== -->
+  <main id="faq" class="container">
+
+    <h2 class="section-title">Frequently Asked Questions</h2>
+
+    <!-- Category filter pills -->
+    <div class="category-filters" id="category-filters">
+      <button class="pill active" data-category="all">All</button>
+      <button class="pill" data-category="admission">Admission</button>
+      <button class="pill" data-category="academics">Academics</button>
+      <button class="pill" data-category="fees">Fees &amp; Scholarships</button>
+      <button class="pill" data-category="campus">Campus Life</button>
+      <button class="pill" data-category="technical">Technical Support</button>
+    </div>
+
+    <!-- FAQ accordion -->
+    <div class="faq-list" id="faq-list">
+      <!-- items are injected by script.js -->
+    </div>
+
+    <p class="no-results" id="no-results" hidden>No matching questions found.</p>
+  </main>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Still have questions?</h2>
+      <p>Reach out to the Student Help Desk — we're happy to assist.</p>
+      <a href="mailto:helpdesk@college.edu" class="btn">Email Help Desk</a>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 College Help Portal. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
